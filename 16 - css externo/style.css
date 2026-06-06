@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(195, 165, 154);
+    padding: 60px;
+}
+
+p{
+    color: blue;
+}
+
+ul > li{
+    color: crimson;
+}

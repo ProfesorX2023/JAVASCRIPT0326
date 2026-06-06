@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Empleado(nombre, apellido, edad, cargo){
+            this.nombre = nombre;
+            this.apellido = apellido;
+            this.edad = edad;
+            this.cargo = cargo;
+            this.presentarse = function(){
+                console.log(`Mi nombres es ${this.nombre} ${this.apellido}, soy ${this.cargo} y tengo ${this.edad} años de edad`);
+            };
+        }
+
+        let empleado1 = new Empleado("Juan","Pérez",30,"Desarrollador");
+        let empleado2 = new Empleado("Maria","Véliz",30,"RRHH");
+        let empleado3 = new Empleado("Marcos","Polanco",33,"Gerente");
+    </script>
+</body>
+</html>

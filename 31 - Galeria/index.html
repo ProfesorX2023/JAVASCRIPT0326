@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f8fc;
+            padding: 40px 20px;
+
+        }
+
+        h1 {
+            text-align: center;
+            color: #1a1a2e;
+            margin-bottom: 40px;
+        }
+
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .galeria-item {
+            display: flex;
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2);
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 4rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .galeria-item:hover{
+            transform: scale(1.05) rotate(2deg);
+        }
+
+        .galeria-item:nth-child(2n){
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        .galeria-item:nth-child(3n){
+            background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+        }
+
+        .galeria-item:nth-child(4n){
+            background: linear-gradient(135deg, #43e97b 0%, #38f97d 100%);
+        }
+    </style>
+</head>
+<body>
+    <h1>🎨 Galería con Flexbox + Wrap</h1>
+
+    <div class="galeria">
+        <div class="galeria-item">1</div>
+        <div class="galeria-item">2</div>
+        <div class="galeria-item">3</div>
+        <div class="galeria-item">4</div>
+        <div class="galeria-item">5</div>
+        <div class="galeria-item">6</div>
+        <div class="galeria-item">7</div>
+        <div class="galeria-item">8</div>
+        <div class="galeria-item">9</div>
+    </div>
+
+    <div class="info">
+        <h3>📌 Propiedades clave:</h3>
+        <p>
+            <code>flex-wrap: wrap;</code> → Permite que los elementos bajen a una nueva línea<br>
+            <code>gap: 15px;</code> → Espacio entre elementos (mejor que usar margin)<br>
+            <code>width: 200px;</code> → Ancho fijo, se acomodan automáticamente
+        </p>
+        <p style="margin-top: 15px; color: #666;">
+            <strong>Prueba:</strong> Cambia el tamaño de la ventana para ver cómo los elementos se reorganizan automáticamente.
+        </p>
+    </div>
+</body>
+</html>

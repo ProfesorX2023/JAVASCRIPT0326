@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let perro = {
+            nombre: "Simba",
+            raza: "Shih Tzu",
+            edad: 5,
+            ladrar(){
+                console.log("Guauuuu!!!!");
+            }
+        }
+
+        let persona = {
+            nombre: "Juan",
+            edad: 25,
+            activo: true,
+            hobbies: ["leer","nadar"],
+            direccion: {
+                calle: "5ta Av",
+                ciudad: "Guatemala"
+            }
+        }
+
+        perro.edad = 8;
+        
+        persona.colorOjos = "marrón";
+
+        perro["peso"] = 7;
+
+        delete perro.peso;
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function multiplicar(a,b){
+            return a * b;
+        }
+
+        console.log(multiplicar(3,2));
+        console.log(multiplicar(10,5));
+        console.log(multiplicar(9,13));
+
+        function operaciones(a,b){
+            return [a+b, a-b, a*b, a/b]
+        }
+
+        const  [suma, resta, multiplicacion, division] = operaciones(2,5); // importante para react
+        console.log(suma);
+        console.log(resta);
+        console.log(multiplicacion);
+        console.log(division);
+    </script>
+</body>
+</html>

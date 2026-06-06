@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Perro{
+            constructor(nombre,raza,edad){
+                this.nombre = nombre;
+                this.raza = raza;
+                this.edad = edad;
+            }
+
+            ladrar(){
+                console.log("Guauuu!!!!");
+            }
+
+            saludar(){
+                console.log("Hola, me llamo " + this.nombre);
+            }
+
+            cumplirAnios(){
+                this.edad = this.edad + 1;
+                console.log("Ahora tengo " + this.edad + " años");
+            }
+        }
+
+        let perro1 = new Perro("Simba","Shih Tzu",4);
+        let perro2 = new Perro("Reina","Caniche",15);
+    </script>
+</body>
+</html>
